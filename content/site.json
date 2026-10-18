@@ -4,6 +4,9 @@
   "intro": "I bring a medical laboratory science perspective to bioinformatics and data science, connecting biological questions with careful data analysis, genomic methods and reproducible research.",
   "current_focus": "Bacterial genomics · Antimicrobial resistance · Research data analysis · Reproducible workflows",
   "about": "My background in medical laboratory science informs how I approach research data: with attention to quality, context and reliable interpretation.",
+  "about_lead": "I work at the intersection of medical laboratory science, bioinformatics and research data analysis. My laboratory background has shaped a practical, quality-conscious approach to scientific evidence.",
+  "about_text": "Working with laboratory processes has shown me how specimen quality, standard procedures, documentation and quality assurance affect the reliability of results. Those principles remain important as I work with computational methods: data need to be checked, analytical decisions documented, and findings interpreted in their biological and public-health context. My experience includes laboratory quality systems and working with principles associated with ISO 15189:2022.",
+  "about_ambition": "My current focus is developing and applying skills in genomic analysis, statistical methods, R and Python, and reproducible computational workflows. Research interests include bacterial genomics and antimicrobial resistance, pathogen evolution, infectious-disease research, and public-health data science. I want to contribute to African-led research, collaborate across disciplines, and make responsible analytical methods more accessible through project-based support, training and scientific communication.",
   "research_interests": [
     "Antimicrobial resistance and bacterial genomics",
     "Pathogen genomics and phylogenetic analysis",
@@ -71,16 +74,17 @@
     {
       "title": "Bacterial genome analysis workflow",
       "category": "Bioinformatics",
-      "status": "In progress",
-      "summary": "A practical workflow for analysing paired-end bacterial sequencing reads, from quality control and trimming to genome assembly assessment and preparation for comparative analysis.",
+      "status": "Completed",
+      "summary": "A practical workflow for microorganism identification when given raw sequence data from sequence data quality control, trimming, performing alignment, followed by assembly to get a consensus genome, and finally using BLAST to identify the organism that was in the sample.",
       "methods": [
         "FastQC",
         "fastp",
         "Shovill / SPAdes",
-        "QUAST"
+        "QUAST",
+        "BLAST"
       ],
-      "github": "https://github.com/AineBoaz",
-      "note": "Work in progress. Specific repository links, final quality metrics and biological findings will be added when they are ready to share."
+      "github": "https://lnkd.in/p/dk-Zzq9Z",
+      "note": "Project completed and part of the results accessible on my Linkedin account."
     },
     {
       "title": "Research data analysis workflow",
@@ -110,24 +114,31 @@
       "note": "Research direction; specific studies and outputs will be listed separately as they become available."
     }
   ],
-  "publications": [],
-  "trainings": [],
-  "certifications": [],
+  "publications": [
+    {
+      "title": "Prevalence, Morphological Classification, And Factors Associated With Anemia Among Pregnant Women Accessing Antenatal Clinic At Itojo Hospital, South Western Uganda.",
+      "date": "2019",
+      "description": "Okia CC, Aine B, Kiiza R, Omuba P, Wagubi R, Muwanguzi E, Apecu RO, Okongo B, Oyet C. Prevalence, Morphological Classification, And Factors Associated With Anemia Among Pregnant Women Accessing Antenatal Clinic At Itojo Hospital, South Western Uganda. Journal of Blood Medicine. 2019;10:351–357.",
+      "status": "Published",
+      "url": "https://doi.org/10.2147/JBM.S216613"
+    }
+  ],
   "articles": [
+    {
+      "title": "R MARKDOWN IS A GAMECHANGER FOR SCIENTISTS",
+      "summary": "Learning is continuous, and now R is improving my writing skills because it has several features that make it easy to do all the write-up, analysis, and visualization all at once. \n\nThe most exciting part of the R programming language is R Markdown. \n\nMost scientific reports are written twice.\nOnce as code. Once as prose pasted into Word with numbers retyped by hand, figures exported and dragged in, and a silent prayer that nothing changes before submission.\nR Markdown lets you write them once.\nI put together a Short guide on how to actually use it, from YAML to parameterised reports to a full worked example",
+      "status": "Published",
+      "url": "https://www.linkedin.com/safety/go/?url=https%3A%2F%2Flnkd.in%2Fd22C5nAP&urlhash=sxj0&mt=EuTvk_h2UaEJdK-PfyWWSHbr-KBcLDSwythbD2C4l0-s-dbNWJsVpw9iyDQcbEcCpxhK5eHwTfw6oswSJ-0Vp5Cvx3zG37Od3QHteFzyDr_mo2gl5GWOP2y6WQ&isSdui=true&lipi=urn%3Ali%3Apage%3Ad_flagship3_search_srp_all%3B22n254ctTR%2Bf6wypDUjbUw%3D%3D"
+    },
     {
       "title": "Quality control before bacterial genome assembly",
       "summary": "A planned practical note on read quality assessment, trimming decisions and assembly quality checks.",
-      "status": "Planned note",
-      "url": ""
+      "status": "Planned note"
     },
     {
       "title": "Building reproducible computational research",
       "summary": "A planned note on scripts, documentation, project organisation and transparent reporting.",
-      "status": "Planned note",
-      "url": ""
+      "status": "Planned note"
     }
-  ],
-  "about_lead": "I work at the intersection of medical laboratory science, bioinformatics and research data analysis. My laboratory background has shaped a practical, quality-conscious approach to scientific evidence.",
-  "about_text": "Working with laboratory processes has shown me how specimen quality, standard procedures, documentation and quality assurance affect the reliability of results. Those principles remain important as I work with computational methods: data need to be checked, analytical decisions documented, and findings interpreted in their biological and public-health context. My experience includes laboratory quality systems and working with principles associated with ISO 15189:2022.",
-  "about_ambition": "My current focus is developing and applying skills in genomic analysis, statistical methods, R and Python, and reproducible computational workflows. Research interests include bacterial genomics and antimicrobial resistance, pathogen evolution, infectious-disease research, and public-health data science. I want to contribute to African-led research, collaborate across disciplines, and make responsible analytical methods more accessible through project-based support, training and scientific communication."
+  ]
 }

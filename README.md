@@ -14,7 +14,7 @@ This is a personal portfolio, not a company landing page. It foregrounds the per
 1. Confirm the portrait accurately represents you and approve it for public use.
 2. Confirm the LinkedIn URL and GitHub username/repository.
 3. Replace the example project entries with specific projects, results and repository URLs. Some entries are deliberately labelled as in progress or portfolio entries to complete.
-4. Add verified publication records, trainings and certifications to `content/site.json`; empty arrays currently display a clear placeholder instead of invented records.
+4. Add verified publication records, trainings, and certifications to `content/site.json`; empty arrays currently display a clear placeholder instead of invented records.
 5. Review service descriptions and only keep offers that reflect your current skills and capacity.
 6. Confirm the current-focus and biography text.
 
@@ -57,3 +57,5 @@ The form uses `mailto:`. It prepares an email draft in the visitor's configured 
 - Increased navigation, branding, hero metadata and section-label text sizes.
 - Darkened teal and muted text colours to improve contrast. Links retain text labels and underlines on hover so colour is not the only cue.
 - The portrait remains at `assets/images/boaz-aine-portrait.png`.
+
+Copyright. @AineBoaz

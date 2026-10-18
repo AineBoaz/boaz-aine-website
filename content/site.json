@@ -1,0 +1,133 @@
+{
+  "name": "Boaz Aine",
+  "headline": "BIOINFORMATICS · GENOMICS · RESEARCH DATA SCIENCE",
+  "intro": "I bring a medical laboratory science perspective to bioinformatics and data science, connecting biological questions with careful data analysis, genomic methods and reproducible research.",
+  "current_focus": "Bacterial genomics · Antimicrobial resistance · Research data analysis · Reproducible workflows",
+  "about": "My background in medical laboratory science informs how I approach research data: with attention to quality, context and reliable interpretation.",
+  "research_interests": [
+    "Antimicrobial resistance and bacterial genomics",
+    "Pathogen genomics and phylogenetic analysis",
+    "Public-health data science and disease modelling",
+    "Reproducible computational research"
+  ],
+  "email": "aine.datascience@gmail.com",
+  "linkedin": "https://www.linkedin.com/in/boaz-aine/",
+  "github_username": "AineBoaz",
+  "github_url": "https://github.com/AineBoaz",
+  "portrait": "assets/images/boaz-aine-portrait.png",
+  "services": [
+    {
+      "title": "Bioinformatics & sequence analysis",
+      "description": "Project-scoped support with sequencing-data quality checks, read trimming, genome assembly assessment and interpretation of bioinformatics outputs.",
+      "scope": "Workflow and deliverables agreed for each dataset."
+    },
+    {
+      "title": "Genomics & comparative analysis",
+      "description": "Support organising genomic comparisons, exploring sequence variation, reviewing annotation outputs and preparing clear summaries of results.",
+      "scope": "Methods depend on organism, data quality and research question."
+    },
+    {
+      "title": "Research data analysis",
+      "description": "Data cleaning, exploratory data analysis, descriptive statistics, statistical summaries and interpretation for research datasets.",
+      "scope": "Analysis plan defined before work starts."
+    },
+    {
+      "title": "Data visualisation & reporting",
+      "description": "Clear charts, tables and analytical summaries that help communicate research findings to technical and non-technical audiences.",
+      "scope": "Figures and reports tailored to the intended audience."
+    },
+    {
+      "title": "Public-health data science",
+      "description": "Support exploring surveillance and population-health datasets, identifying trends and preparing evidence-informed summaries.",
+      "scope": "Findings are reported with appropriate limitations."
+    },
+    {
+      "title": "Research methods & study planning",
+      "description": "Practical support refining research questions, aligning objectives with analysis plans and organising reproducible data workflows.",
+      "scope": "Does not replace institutional or ethics review."
+    },
+    {
+      "title": "Scientific writing & technical editing",
+      "description": "Editing and structuring methods, analytical reports, technical documentation and research proposals for clarity and consistency.",
+      "scope": "Authorship, citations and research integrity are maintained."
+    },
+    {
+      "title": "Training & workflow support",
+      "description": "One-to-one or small-group practical sessions in selected bioinformatics, R/Python data analysis and reproducible research workflows.",
+      "scope": "Topics and level agreed in advance."
+    },
+    {
+      "title": "Grant & project proposal support",
+      "description": "Support organising proposal narratives, workplans, methods sections, deliverables and budgets for research or data-focused projects.",
+      "scope": "Funding requirements and eligibility remain the applicant’s responsibility."
+    },
+    {
+      "title": "Data management & reproducibility",
+      "description": "Help organising project files, documenting analysis steps, improving script readability and preparing workflows that others can review.",
+      "scope": "Security and data-sharing rules are agreed before access."
+    }
+  ],
+  "projects": [
+    {
+      "title": "Bacterial genome analysis workflow",
+      "category": "Bioinformatics",
+      "status": "In progress",
+      "summary": "A practical workflow for analysing paired-end bacterial sequencing reads, from quality control and trimming to genome assembly assessment and preparation for comparative analysis.",
+      "methods": [
+        "FastQC",
+        "fastp",
+        "Shovill / SPAdes",
+        "QUAST"
+      ],
+      "github": "https://github.com/AineBoaz",
+      "note": "Work in progress. Specific repository links, final quality metrics and biological findings will be added when they are ready to share."
+    },
+    {
+      "title": "Research data analysis workflow",
+      "category": "Data science",
+      "status": "Developing",
+      "summary": "Building a reproducible approach to research data analysis, including data cleaning, exploratory analysis, statistical summaries, visualisation and interpretation.",
+      "methods": [
+        "R",
+        "Python",
+        "Exploratory data analysis",
+        "Data visualisation"
+      ],
+      "github": "https://github.com/AineBoaz",
+      "note": "This entry describes an area of portfolio development, not a completed analysis or published result."
+    },
+    {
+      "title": "Genomics for infectious-disease research",
+      "category": "Research",
+      "status": "Research focus",
+      "summary": "Exploring how pathogen genomic data and population-level evidence can be combined to investigate variation, transmission and public-health questions.",
+      "methods": [
+        "Genomics",
+        "Phylogenetics",
+        "Statistical analysis"
+      ],
+      "github": "https://github.com/AineBoaz",
+      "note": "Research direction; specific studies and outputs will be listed separately as they become available."
+    }
+  ],
+  "publications": [],
+  "trainings": [],
+  "certifications": [],
+  "articles": [
+    {
+      "title": "Quality control before bacterial genome assembly",
+      "summary": "A planned practical note on read quality assessment, trimming decisions and assembly quality checks.",
+      "status": "Planned note",
+      "url": ""
+    },
+    {
+      "title": "Building reproducible computational research",
+      "summary": "A planned note on scripts, documentation, project organisation and transparent reporting.",
+      "status": "Planned note",
+      "url": ""
+    }
+  ],
+  "about_lead": "I work at the intersection of medical laboratory science, bioinformatics and research data analysis. My laboratory background has shaped a practical, quality-conscious approach to scientific evidence.",
+  "about_text": "Working with laboratory processes has shown me how specimen quality, standard procedures, documentation and quality assurance affect the reliability of results. Those principles remain important as I work with computational methods: data need to be checked, analytical decisions documented, and findings interpreted in their biological and public-health context. My experience includes laboratory quality systems and working with principles associated with ISO 15189:2022.",
+  "about_ambition": "My current focus is developing and applying skills in genomic analysis, statistical methods, R and Python, and reproducible computational workflows. Research interests include bacterial genomics and antimicrobial resistance, pathogen evolution, infectious-disease research, and public-health data science. I want to contribute to African-led research, collaborate across disciplines, and make responsible analytical methods more accessible through project-based support, training and scientific communication."
+}

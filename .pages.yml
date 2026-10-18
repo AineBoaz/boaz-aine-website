@@ -1,0 +1,174 @@
+# Pages CMS starter configuration.
+# Site content is stored in content/site.json and read by assets/js/main.js.
+# Validate this schema in Pages CMS when connecting the repository; its schema may evolve.
+media:
+  input: assets/images
+  output: assets/images
+content:
+  - name: site_content
+    label: Website content
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: name
+        label: Name
+        type: string
+      - name: headline
+        label: Professional headline
+        type: string
+      - name: intro
+        label: Homepage introduction
+        type: text
+      - name: current_focus
+        label: Current focus
+        type: text
+      - name: about
+        label: About biography
+        type: text
+      - name: about_lead
+        label: About — opening paragraph
+        type: text
+      - name: about_text
+        label: About — laboratory background
+        type: text
+      - name: about_ambition
+        label: About — bioinformatics direction and ambitions
+        type: text
+      - name: research_interests
+        label: Research interests
+        type: string
+        list: true
+      - name: email
+        label: Contact email
+        type: string
+      - name: linkedin
+        label: LinkedIn URL
+        type: string
+      - name: github_username
+        label: GitHub username
+        type: string
+      - name: github_url
+        label: GitHub profile URL
+        type: string
+      - name: portrait
+        label: Portrait path
+        type: string
+      - name: services
+        label: Services
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Service title
+            type: string
+          - name: description
+            label: Description
+            type: text
+          - name: scope
+            label: Scope note
+            type: text
+      - name: projects
+        label: Projects
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Project title
+            type: string
+          - name: category
+            label: Category
+            type: string
+          - name: status
+            label: Status
+            type: string
+          - name: summary
+            label: Summary
+            type: text
+          - name: methods
+            label: Methods and tools
+            type: string
+            list: true
+          - name: github
+            label: Repository URL
+            type: string
+          - name: note
+            label: Public project context / limitations
+            type: text
+      - name: publications
+        label: Publications and outputs
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Title
+            type: string
+          - name: date
+            label: Date or year
+            type: string
+          - name: description
+            label: Citation or description
+            type: text
+          - name: status
+            label: Status
+            type: string
+          - name: url
+            label: DOI or record URL
+            type: string
+      - name: trainings
+        label: Training and workshops
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Training title
+            type: string
+          - name: date
+            label: Date
+            type: string
+          - name: organisation
+            label: Organiser
+            type: string
+          - name: description
+            label: What was covered
+            type: text
+          - name: url
+            label: Event or evidence URL
+            type: string
+      - name: certifications
+        label: Certifications
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Certification title
+            type: string
+          - name: date
+            label: Award date
+            type: string
+          - name: issuer
+            label: Issuing organisation
+            type: string
+          - name: credential
+            label: Credential ID or note
+            type: string
+          - name: verification_url
+            label: Verification URL
+            type: string
+      - name: articles
+        label: Technical notes and articles
+        type: object
+        list: true
+        fields:
+          - name: title
+            label: Article title
+            type: string
+          - name: summary
+            label: Summary
+            type: text
+          - name: status
+            label: Status
+            type: string
+          - name: url
+            label: Published article URL
+            type: string

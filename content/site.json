@@ -112,6 +112,23 @@
       ],
       "github": "https://github.com/AineBoaz",
       "note": "Research direction; specific studies and outputs will be listed separately as they become available."
+    },
+    {
+      "title": "Heart Disease Data Analytics with Python",
+      "category": "Data Analytics",
+      "status": "In Progress",
+      "summary": "Analysing the UCI Heart Disease dataset using Python to explore participant characteristics, identify patterns, investigate relationships between variables, and develop predictive models. The project follows a structured, reproducible workflow, progressing from data inspection and descriptive statistics to comparative analysis, statistical investigation, and machine learning.",
+      "methods": [
+        "Python",
+        "Pandas and NumPy",
+        "Statistical Analysis",
+        "Data Visualisation",
+        "Machine Learning",
+        "Jupyter Notebook",
+        "Git and GitHub"
+      ],
+      "github": "https://github.com/AineBoaz/Heart_Disease_Data_Analysis_project",
+      "note": "This is an ongoing learning and portfolio project using the UCI Heart Disease dataset. Initial descriptive analysis has been completed, including age summary statistics and visualisations of age and sex distributions. Comparative analysis, further statistical investigation, and predictive modelling are planned. Findings will be interpreted within the limitations of the dataset; predictive performance will require appropriate model validation."
     }
   ],
   "publications": [

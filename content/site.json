@@ -147,6 +147,14 @@
       "organisation": "IDEMU | CEPI | Makerere University - School of Public Health"
     }
   ],
+  "certifications": [
+    {
+      "title": "Introduction to Bioinformatics Training (IBT)",
+      "date": "01 NOV 2026",
+      "issuer": "African Bioinformatics Institute",
+      "verification_url": "https://lnkd.in/p/d6-SywaY"
+    }
+  ],
   "articles": [
     {
       "title": "R MARKDOWN IS A GAMECHANGER FOR SCIENTISTS",

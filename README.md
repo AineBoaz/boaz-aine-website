@@ -1,61 +1,45 @@
-# Boaz Aine — Personal Bioinformatics & Data Science Portfolio
+# Boaz Aine — Personal Portfolio
 
-This is a personal portfolio, not a company landing page. It foregrounds the person's current work, research interests, public GitHub activity, publications, professional development, technical notes and services.
+A static portfolio published with GitHub Pages. It uses plain HTML, CSS and JavaScript; public profile and portfolio content is maintained in `content/site.json`.
 
-## Included
-- `index.html`: portfolio structure
-- `assets/css/styles.css`: responsive navy/teal/white design
-- `assets/js/main.js`: navigation, content rendering, GitHub public activity and email-draft enquiry form
-- `assets/images/boaz-aine-portrait.png`: enhanced portrait prepared for the website
-- `content/site.json`: editable content source
-- `.pages.yml`: Pages CMS starter configuration
+## Site files
 
-## Review before deployment
-1. Confirm the portrait accurately represents you and approve it for public use.
-2. Confirm the LinkedIn URL and GitHub username/repository.
-3. Replace the example project entries with specific projects, results and repository URLs. Some entries are deliberately labelled as in progress or portfolio entries to complete.
-4. Add verified publication records, trainings, and certifications to `content/site.json`; empty arrays currently display a clear placeholder instead of invented records.
-5. Review service descriptions and only keep offers that reflect your current skills and capacity.
-6. Confirm the current-focus and biography text.
+- `index.html` — page structure, page metadata and static profile fallback.
+- `assets/css/styles.css` — responsive layout and visual styles.
+- `assets/js/main.js` — content rendering, accessible navigation, enquiry form and optional public GitHub activity.
+- `assets/images/boaz-aine-cutout-optimized.png` — transparent 950 × 1140 hero portrait cutout.
+- `assets/images/boaz-aine-portrait.jpg` — optimized portrait used for social sharing.
+- `assets/images/hero-genomics.jpg` — compressed decorative genomics background for the hero and project art.
+- `assets/favicon.svg` — site icon.
+- `content/site.json` — editable profile, research, projects, outputs, development, articles and services.
+- `.pages.yml` — Pages CMS schema for editing `content/site.json`.
 
-## Preview
-Because the page loads `content/site.json` with `fetch()`, do not preview by double-clicking `index.html` from a local file path (for example `file:///E:/...`). Browser security can block local JSON requests. Preview with a local server or after deploying to GitHub Pages.
+## Content editing
 
-## GitHub Pages deployment
-1. Create a repository named `<your-github-username>.github.io` if you want a root-level personal site. Confirm the exact username first.
-2. Upload the *contents* of this folder to the repository root, including the hidden `.pages.yml` file.
-3. In GitHub, go to Settings → Pages → Deploy from a branch, select `main` and `/(root)`, then save.
-4. Wait for GitHub Pages to publish, then open the URL shown in Settings → Pages and verify it in a private browser window and on mobile.
-5. Do not describe the website as live until the published URL loads and the main links and sections have been tested.
+Edit `content/site.json` directly or connect the repository to Pages CMS and use `.pages.yml`. Keep the JSON valid. Dynamic sections are shown only when they contain usable records; incomplete records and unpublished article drafts do not appear on the public site. An unavailable or invalid JSON file leaves the static profile copy visible and hides the data-driven sections without exposing an error or editing instructions.
 
-## Pages CMS
-1. Sign in at https://app.pagescms.org with GitHub.
-2. Authorise Pages CMS for the website repository only if you are comfortable with its permissions.
-3. Open the repository and validate `.pages.yml` in the CMS. CMS field schemas can change; resolve any validation messages using https://pagescms.org/docs/.
-4. Test a harmless edit in `content/site.json`, save it through Pages CMS, and confirm the change appears on the website after GitHub Pages updates.
-5. The site currently uses a single JSON content file for easy content editing. If the CMS cannot edit the nested arrays with the provided schema, we should adjust the schema or split projects/training/publications into separate JSON files.
+Project records need a title and summary to appear. Optional fields are category, status, methods, a project link (`github`) and a context note. Publications, training and certification records need a title. Published articles need a title, summary, `Published` status and public URL. Service cards need a title and description. Research interests and expertise tags are plain text lists.
 
-## GitHub activity panel
-The website requests recent public push events from GitHub's public API in the visitor's browser. It requires internet access, may be affected by GitHub rate limits, and only displays public activity. A fallback link to the GitHub profile is shown if the request fails.
+The home-page summary counts are calculated from the current project, publication, training and service records; they are not manually entered or fixed claims.
 
-## Enquiry form
-The form uses `mailto:`. It prepares an email draft in the visitor's configured email application; it does not store submissions or send them automatically. For a true hosted form, connect a form service after the site structure is approved.
+Pages CMS schemas may evolve. After connecting Pages CMS, validate `.pages.yml` in its editor and confirm that nested arrays can be edited and saved as JSON. The CMS configuration is a repository-side authoring aid; it is not linked from the public site.
 
+## Local preview
 
-## Readability and consultancy update
-- Typography has been increased across body text, section summaries, project cards, outputs and form labels.
-- Section spacing and hierarchy have been strengthened for easier scanning.
-- The Services section is now labelled as consultancy and covers bioinformatics/sequence analysis, genomics, research data analysis, visualisation, public-health data science, research planning, scientific editing, training, grant/project proposals and reproducibility.
-- A built-in preview fallback allows content cards to appear when opening `index.html` directly from a local file, even if the browser blocks fetching `content/site.json`. The hosted website continues to use `content/site.json` as its main content source.
-- Service descriptions are framed as project-scoped support; keep only services that you are comfortable and qualified to provide.
+Run a local static server from the repository root, for example:
 
+```sh
+python -m http.server 8000
+```
 
-## Professional identity and accessibility update
-- Homepage identity now presents Boaz as a bioinformatician with a medical laboratory science foundation, without making the hero dependent on current MSc enrolment.
-- The About section is a narrative connecting laboratory practice, quality systems and ISO 15189:2022 principles with current bioinformatics/data-science development and long-term ambitions.
-- Removed repeated About copy and added distinct narrative paragraphs.
-- Increased navigation, branding, hero metadata and section-label text sizes.
-- Darkened teal and muted text colours to improve contrast. Links retain text labels and underlines on hover so colour is not the only cue.
-- The portrait remains at `assets/images/boaz-aine-portrait.png`.
+Then open `http://localhost:8000`. A local server is needed because the browser fetches `content/site.json`; opening the HTML as a `file://` URL can block that request. If only About and Contact appear, the JSON did not load, so the data-driven sections and their navigation links are being hidden by design.
 
-Copyright. @AineBoaz
+## GitHub Pages
+
+The site is intended to publish from the repository root. In the repository’s **Settings → Pages**, choose the approved source branch and `/ (root)`. Review the preview and approve changes before merging or publishing them to the live site.
+
+## Integrations and limitations
+
+- The GitHub activity panel requests recent public push events from GitHub’s public API in the visitor’s browser. It can be unavailable due to network access, rate limits or a lack of recent public pushes; the profile link remains available.
+- The enquiry form prepares a message in the visitor’s email application using `mailto:`. It does not store submissions or send messages automatically.
+- The portrait should be reviewed by its subject before publication. Profile claims, links, project status and public records should be checked by the owner before deployment.

@@ -17,12 +17,19 @@ content:
       - name: headline
         label: Professional headline
         type: string
+      - name: hero_role
+        label: Homepage professional descriptor
+        type: text
       - name: intro
         label: Homepage introduction
         type: text
       - name: current_focus
         label: Current focus
         type: text
+      - name: expertise
+        label: Expertise overview tags
+        type: string
+        list: true
       - name: about
         label: About biography
         type: text
@@ -90,7 +97,7 @@ content:
             type: string
             list: true
           - name: github
-            label: Repository URL
+            label: Project link (repository or public project page)
             type: string
           - name: note
             label: Public project context / limitations
